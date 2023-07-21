@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.jpeg">
+    <title>Bank Account</title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="./img/pexels-michael-steinberg-342943.jpg" alt="background">
+    </div>
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><img src="./img/logo.jpeg" class="images" alt="logo"></li>
+            <li><a class="nav-link active" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">About</a></li>
+            <li><a class="nav-link" href="./gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="./services.html">Services</a></li>
+            <li><a class="nav-link" href="./contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="row row-task mt-5">
+        <div class="container content">
+            <div class="col">
+                <h1>Bank App</h1>
+                <form id="bankForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required><br>
+
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" required><br>
+
+                    <label for="transactionType">Transaction Type:</label>
+                    <select id="transactionType" required>
+                        <option value="deposit">Deposit</option>
+                        <option value="withdrawal">Withdrawal</option>
+                    </select><br>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" required><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container Details">
+            <div class="col">
+                <div id="accountDetails">
+                    <h2>Account Details</h2>
+                    <p>Name: <span class="name"></span></p>
+                    <p>Account Number: <span class="accountNumber"></span></p>
+                    <p>Balance: <span class="balance"></span></p>
+                </div>
+
+                <div id="transactionHistory">
+                    <h2>Transaction History</h2>
+                    <ul id="transactions"></ul>
+                </div>
+
+                <div id="insufficientFundsMessage">
+                    Insufficient Funds
+                </div>
+
+                <div id="transactionDetails">
+                    <h2>Transaction Details</h2>
+                    <p>Name: <span class="name"></span></p>
+                    <p>Account Number: <span class="accountNumber"></span></p>
+                    <p>Type: <span class="type"></span></p>
+                    <p>Amount: <span class="amount"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
+                                        <p class="info2">Kehindeoloruntayo1@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html">Features</a></li>
+                                    <li><a href="single-blog.html">Pricing</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#"> Sitemap</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Report a bug</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Core Features</h4>
+                                <ul>
+                                    <li><a href="#">Email Marketing</a></li>
+                                    <li><a href="#"> Offline SEO</a></li>
+                                    <li><a href="#">Social Media Marketing</a></li>
+                                    <li><a href="#">Lead Generation</a></li>bp
+                                    <li><a href="#"> 24/7 Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+
+</html>
