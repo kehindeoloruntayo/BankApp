@@ -16,7 +16,7 @@ body {
 .navbar {
     padding: 0;
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 160px;
 }
 
 .navbar ul {
@@ -38,6 +38,7 @@ body {
 .navbar img {
     width: 60px;
     margin-right: 500px;
+    border-radius: 50px;
 }
 
 .navbar a,
