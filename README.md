@@ -1,5 +1,5 @@
 # _Bank App_
-### _Bank App allows users to perform basic banking transactions._
+### _Bank App allows users to create bank accounts, deposit and withdraw money from them, and view their details and transaction history on the web page._
 
 ## Technology used
 * _GIT_
